@@ -8,5 +8,4 @@ const jonas = {
   friends: ['Michael', 'Peter', 'Steven'],
 };
 
-//console.log(jonas.firstName);
 console.log(jonas['firstName']);
