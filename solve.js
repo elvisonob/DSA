@@ -1,11 +1,13 @@
-// Dot and bracket notation
+/*
+Write a loop that prints
 
-const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
-  age: 2037 - 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven'],
-};
+Iteration 1
+Iteration 2
+...
+Iteration 5
 
-console.log(jonas['firstName']);
+*/
+
+for (let i = 1; i <= 5; i++) {
+  console.log(`Iteration ${i}`);
+}
