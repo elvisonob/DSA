@@ -1,15 +1,54 @@
-/*
-Reverse an array manually using a for loop (no .reverse()).
-*/
+//s = [{()}]
 
-const arr = [1, 2, 3, 4, 5, 6, 7];
+// const isValid = function (s) {
+//   let charStack = [];
 
-let reverseArray = [];
+//   for (let i = 0; i < s.length; i++) {
+//     let currentChar = s.charAt(i);
+//     switch (currentChar) {
+//       case '(':
+//         charStack.push(')');
+//         break;
+//       case '{':
+//         charStack.push('}');
+//         break;
+//       case '[':
+//         charStack.push(']');
+//         break;
+//       default:
+//         if (currentChar !== charStack.pop()) {
+//           return false;
+//         }
+//     }
+//   }
 
-// reverse an array, starting with highest to lowest
+//   return charStack.length === 0;
+// };
 
-for (let i = arr.length - 1; i >= 0; i--) {
-  reverseArray.push(arr[i]);
+function isValid(s) {
+  // loop through s
+  let charStack = [];
+  for (let i = 0; i < s.length; i++) {
+    let currStack = s.charAt(i);
+
+    switch (currStack) {
+      case '{':
+        charStack.push('}');
+        break;
+      case '[':
+        charStack.push(']');
+        break;
+      case '(':
+        charStack.push(')');
+        break;
+      default:
+        if (currStack !== charStack.pop()) {
+          return false;
+        }
+    }
+  }
+
+  return charStack.length === 0;
 }
 
-console.log(reverseArray);
+console.log(isValid('{[])()]}'));
