@@ -2,7 +2,7 @@
 Reverse an array manually using a for loop (no .reverse()).
 */
 
-const arr = [1, 2, 3, 4, 5, 6];
+const arr = [1, 2, 3, 4, 5, 6, 7];
 
 let reverseArray = [];
 
