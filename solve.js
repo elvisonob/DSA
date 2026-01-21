@@ -25,24 +25,48 @@
 //   return charStack.length === 0;
 // };
 
+// function isValid(s) {
+//   // loop through s
+//   let charStack = [];
+//   for (let i = 0; i < s.length; i++) {
+//     let currStack = s.charAt(i);
+
+//     switch (currStack) {
+//       case '{':
+//         charStack.push('}');
+//         break;
+//       case '[':
+//         charStack.push(']');
+//         break;
+//       case '(':
+//         charStack.push(')');
+//         break;
+//       default:
+//         if (currStack !== charStack.pop()) {
+//           return false;
+//         }
+//     }
+//   }
+
+//   return charStack.length === 0;
+// }
+
 function isValid(s) {
-  // loop through s
   let charStack = [];
   for (let i = 0; i < s.length; i++) {
-    let currStack = s.charAt(i);
-
-    switch (currStack) {
-      case '{':
-        charStack.push('}');
+    let currentStack = s[i];
+    switch (currentStack) {
+      case '(':
+        charStack.push(')');
         break;
       case '[':
         charStack.push(']');
         break;
-      case '(':
-        charStack.push(')');
+      case '{':
+        charStack.push('}');
         break;
       default:
-        if (currStack !== charStack.pop()) {
+        if (currentStack !== charStack.pop()) {
           return false;
         }
     }
