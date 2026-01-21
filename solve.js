@@ -51,28 +51,44 @@
 //   return charStack.length === 0;
 // }
 
-function isValid(s) {
-  let charStack = [];
+// function isValid(s) {
+//   let charStack = [];
+//   for (let i = 0; i < s.length; i++) {
+//     let currentStack = s.charAt(i);
+//     switch (currentStack) {
+//       case '(':
+//         charStack.push(')');
+//         break;
+//       case '[':
+//         charStack.push(']');
+//         break;
+//       case '{':
+//         charStack.push('}');
+//         break;
+//       default:
+//         if (currentStack !== charStack.pop()) {
+//           return false;
+//         }
+//     }
+//   }
+
+//   return charStack.length === 0;
+// }
+
+// console.log(isValid('{[([])()]}'));
+
+function countOccurence(s) {
+  let count = {};
   for (let i = 0; i < s.length; i++) {
-    let currentStack = s[i];
-    switch (currentStack) {
-      case '(':
-        charStack.push(')');
-        break;
-      case '[':
-        charStack.push(']');
-        break;
-      case '{':
-        charStack.push('}');
-        break;
-      default:
-        if (currentStack !== charStack.pop()) {
-          return false;
-        }
+    let char = s[i];
+    if (count[char]) {
+      count[char]++;
+    } else {
+      count[char] = 1;
     }
   }
 
-  return charStack.length === 0;
+  return count;
 }
 
-console.log(isValid('{[([])()]}'));
+console.log(countOccurence('hello'));
