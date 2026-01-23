@@ -91,4 +91,19 @@ function countOccurence(s) {
   return count;
 }
 
-console.log(countOccurence('hello'));
+function countOccurence(s) {
+  let count = {};
+  for (let i = 0; i < s.length; i++) {
+    let char = s[i];
+
+    if (count[char]) {
+      count[char]++;
+    } else {
+      count[char] = 1;
+    }
+  }
+
+  return count;
+}
+
+console.log(countOccurence('elvis'));
