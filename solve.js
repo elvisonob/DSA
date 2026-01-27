@@ -75,7 +75,7 @@
 //   return charStack.length === 0;
 // }
 
-// console.log(isValid('{[([])()]}'));
+// console.log(isValid('{[([])()]}'))
 
 function countOccurence(s) {
   let count = {};
