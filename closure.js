@@ -9,6 +9,6 @@ function account(currentBalance) {
 }
 
 const creditCard = account(1000);
-creditCard(100);
+creditCard(1000);
 creditCard(50);
 creditCard(10);
