@@ -4,7 +4,7 @@ function account(currentBalance) {
 
   return function withdrawAmount(funds) {
     currentMoney = currentMoney - funds;
-    console.log('remaining balance:', currentMoney);
+    console.log('remaining balances:', currentMoney);
   };
 }
 
