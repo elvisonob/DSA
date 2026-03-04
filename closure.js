@@ -1,12 +1,8 @@
-function account(currentBalance) {
-  let currentMoney = currentBalance;
-  console.log(currentMoney);
+const testArray = [1, 2, 3, 4, 5];
 
-  return function withdrawAmount(funds) {
-    currentMoney = currentMoney - funds;
-    console.log('remaining money', currentMoney);
-  };
-}
+let sum = 0;
+testArray.forEach((element) => {
+  sum += element;
+});
 
-const creditCard = account(1000);
-creditCard(2000);
+console.log(sum);
