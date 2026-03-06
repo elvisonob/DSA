@@ -1,8 +1,11 @@
-const testArray = [1, 2, 3, 4, 5];
+const testArray = {
+  2: 'Elvis',
+  3: 'Ese',
+  4: 'Eric',
+  5: 'Ehiment',
+  length: 3,
+};
 
-let sum = 0;
-testArray.forEach((element) => {
-  sum += element;
-});
+const result = Array.from(testArray);
 
-console.log(sum);
+console.log(result);
