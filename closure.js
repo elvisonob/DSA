@@ -8,4 +8,4 @@ const testArray = {
 
 const result = Array.from(testArray);
 
-console.log(result);
+console.log(results);
