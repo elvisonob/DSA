@@ -1,11 +1,8 @@
-const testArray = {
-  2: 'Elvis',
-  3: 'Ese',
-  4: 'Eric',
-  5: 'Ehimen',
-  length: 3,
-};
+const numbers = [5, 10, 20];
 
-const result = Array.from(testArray);
+let sum = 0;
+for (const num of numbers) {
+  sum = sum + num;
+}
 
-console.log(result);
+console.log(sum);
