@@ -1,8 +1,8 @@
 const numbers = [5, 10, 20];
 
-let addition = 0;
+let additions = 0;
 for (const num of numbers) {
-  addition = addition + num;
+  additions = additions + num;
 }
 
-console.log(addition);
+console.log(additions);
