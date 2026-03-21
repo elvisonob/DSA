@@ -5,4 +5,4 @@ for (const num of numbers) {
   additions = additions + num;
 }
 
-console.log(additions);
+console.log(add);
