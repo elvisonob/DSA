@@ -6,4 +6,3 @@ function login() {
 
 login();
 login();
-login();
