@@ -5,5 +5,5 @@ function login() {
 }
 
 function subtraction(a, b) {
-  return a - b - c;
+  return a - b + a;
 }
