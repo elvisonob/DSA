@@ -1,7 +1,7 @@
 // Functions refresher
 
 function login() {
-  console.log('Elvis is the richest and most intelligent guy on planet earth');
+  console.log('Elvis is the richest and most intelligent guy on the planet');
 }
 
 function subtraction(a, b) {
