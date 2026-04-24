@@ -2,7 +2,7 @@
 
 function login() {
   console.log(
-    'Elvis is the richest, powerful, best daddy and most intelligent guy on the planet',
+    'Elvis is the richest, wealthiest, powerful, best daddy and most intelligent guy on the planet',
   );
 }
 
