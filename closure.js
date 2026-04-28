@@ -1,11 +1,24 @@
-// Functions refresher
+var name = 'Max';
+//console.log(name);
 
-function login() {
-  console.log(
-    'Elvis is the richest, wealthiest, powerful, best daddy and most intelligent guy on the planet',
-  );
-}
+var secondName = name;
+//console.log(secondName);
 
-function subtraction(a, b) {
-  return a - b + a + c;
-}
+name = 'Chris';
+
+console.log(name);
+
+var person = {
+  age: 28,
+  name: 'Max',
+  hobbies: ['Sports', 'Cooking'],
+};
+
+console.log(person);
+
+var secondPerson = person;
+console.log(secondPerson);
+
+person.age = 35;
+
+console.log(secondPerson);
