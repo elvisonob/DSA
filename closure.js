@@ -1,14 +1,10 @@
-var name = 'Max';
-//console.log(name);
-
-var secondName = name;
-//console.log(secondName);
-
-name = 'Chris';
-
-console.log(name);
-
 var person = {
+  age: 28,
+  name: 'Max',
+  hobbies: ['Sports', 'Cooking'],
+};
+
+var thirdPerson = {
   age: 28,
   name: 'Max',
   hobbies: ['Sports', 'Cooking'],
@@ -16,9 +12,17 @@ var person = {
 
 console.log(person);
 
-var secondPerson = person;
+//var secondPerson = person;
+var secondPerson = Object.assign({}, person);
+console.log('Object Assign', secondPerson);
+
+person.name = 'Chris';
+
+var myHobbies = person.hobbies.slice();
+
+person.hobbies.push('Reading');
 console.log(secondPerson);
 
-person.age = 35;
+console.log(thirdPersons);
 
-console.log(secondPerson);
+console.log(myHobbies);
