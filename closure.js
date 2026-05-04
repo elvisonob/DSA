@@ -1,7 +1,7 @@
 const cars = [
   ['Benz', 'Ford', 'Toyota'],
   ['Renault', 'Sienna', 'Peugeout', 'Avalon'],
-  ['Mazda', 'Volkswagen', 'Honda', 'Nissan'],
+  ['Mazda', 'Volkswagens', 'Nissan'],
 ];
 
 const updatedBoard = cars;
