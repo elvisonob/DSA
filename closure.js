@@ -1,5 +1,5 @@
 const cars = [
-  ['Benz', 'Ford', 'Toyota'],
+  ['Benz', 'Ford'],
   ['Renault', 'Sienna', 'Peugeout', 'Avalon'],
   ['Mazda', 'Volkswagens', 'Nissan'],
 ];
