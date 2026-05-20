@@ -1,13 +1,8 @@
-let n = 5;
+let c = [1, 2];
+console.log(`c = ${c}`);
+add(c, 3);
+console.log(`c = ${c}`);
 
-while (n < 5) {
-  n++;
-  console.log(n);
+function add(array, element) {
+  array = [element];
 }
-
-let i = 5;
-
-do {
-  i++;
-  console.log(i);
-} while (i < 5);
