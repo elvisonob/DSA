@@ -1,8 +1,11 @@
-let c = [1, 2];
-console.log(`c = ${c}`);
-add(c, 3);
-console.log(`c = ${c}`);
+const onobhayedo = {
+  elvis: '35',
+  ese: '33',
+  eric: '30',
+  ehimen: '28',
+  ernest: '19+1',
+};
 
-function add(array, element) {
-  array = [element];
-}
+let keys = Object.values(onobhayedo);
+
+console.log(keys);
