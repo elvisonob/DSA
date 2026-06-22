@@ -3,6 +3,7 @@ const onobhayedo = {
   ese: '33',
   eric: '30',
   ehimen: '28',
+  ernest: '20',
 };
 
 let keys = Object.values(onobhayedo);
